@@ -1,9 +1,24 @@
-<h2>{{program.name| uppercase}} Details</h2>
-<div><span>Name: </span> {{program.name}}</div>
+<h2>MT Programs</h2>
+<!--
+<ul class="programs">
+  <li
+    *ngFor="let program of programs"
+    [class.selected]="program === selectedProgram"
+    (click)="onSelect(program)"
+  >
+    <span class="badge">{{program.id}}</span> {{program.name}}
+  </li>
+</ul>
 
-<!-- Create form to add new programs -->
-<div>
-  <label>
-    name: <input [(ngModel)]="program.name" placeholder="/name" />
-  </label>
+
+<div *ngIf="selectedProgram">
+  <h2>{{selectedProgram.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedProgram.id}}</div>
+  <div>
+    <label
+      >name:
+      <input [(ngModel)]="selectedProgram.name" placeholder="name" />
+    </label>
+  </div>
 </div>
+-->

@@ -3,5 +3,5 @@ export interface Program {
   id: number;
   name: string;
   //birthday: Date;
-  active: Boolean;
+  //active: Boolean;
 }

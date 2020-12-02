@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { PROGRAMS_SEED } from "../mock-programs";
 import { Program } from "../program"; // import the "program type"
+import { PROGRAMS_SEED } from "../mock-programs";
 
 @Component({
   selector: "app-programs",
