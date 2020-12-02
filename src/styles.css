@@ -1,1 +1,5 @@
-/* Add application styles & imports to this file! */
+/* Add application styles & imports to this file! 
+* <2020-12-2> Copied from the angular heros template
+*/
+
+@import "~@angular/material/prebuild-themes/deeppurple-amber.css";

@@ -1,4 +1,12 @@
+<!-- Case1: make list of heros appear-->
+
 <h2>MT Programs</h2>
+<p> List of programs currently available to app. Contact Admin to add more</p>
+<ul class="programs">
+	<li *ngFor="let program of programs">
+		<span class="badge">{{program.id}}</span> {{program.name}}
+	</li>
+</ul>
 <!--
 <ul class="programs">
   <li
@@ -7,18 +15,18 @@
     (click)="onSelect(program)"
   >
     <span class="badge">{{program.id}}</span> {{program.name}}
-  </li>
+	</li>
 </ul>
 
 
 <div *ngIf="selectedProgram">
-  <h2>{{selectedProgram.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedProgram.id}}</div>
-  <div>
-    <label
+	<h2>{{selectedProgram.name | uppercase}} Details</h2>
+	<div><span>id: </span>{{selectedProgram.id}}</div>
+	<div>
+		<label
       >name:
       <input [(ngModel)]="selectedProgram.name" placeholder="name" />
     </label>
-  </div>
+	</div>
 </div>
 -->
