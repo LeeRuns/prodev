@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { PROGRAMS_SEED } from "../mock-programs";
 import { Program } from "../program"; // import the "program type"
 
 @Component({
@@ -7,14 +8,7 @@ import { Program } from "../program"; // import the "program type"
   styleUrls: ["./programs.component.css"]
 })
 export class ProgramsComponent implements OnInit {
-  // statically defining a test program
-  program: Program = {
-    id: 0,
-    name: "Mt Dev",
-    //birthday: Date(),
-    active: true
-  };
-
+  programs = PROGRAMS_SEED;
   constructor() {}
 
   ngOnInit() {}

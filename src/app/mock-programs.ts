@@ -1,12 +1,14 @@
-import { Program } from './program';
+import { Program } from "./program";
 
-export const PROGRAMS: Program[] = [
-{ id: , name: Const, active:true},
-{ id: , name:, active:true},
-{ id: , name:, active:true},
-{ id: , name:, active:true},
-{ id: , name:, active:true},
-
+export const PROGRAMS_SEED: Program[] = [
+  { id: 11, name: "Dr Nice", active: true },
+  { id: 12, name: "Narco", active: true },
+  { id: 13, name: "Bombasto", active: false },
+  { id: 14, name: "Celeritas", active: true },
+  { id: 15, name: "Magneta", active: true },
+  { id: 16, name: "RubberMan", active: false },
+  { id: 17, name: "Dynama", active: true },
+  { id: 18, name: "Dr IQ", active: true },
+  { id: 19, name: "Magma", active: false },
+  { id: 20, name: "Tornado", active: false }
 ];
-
-// TODO change to import from json
