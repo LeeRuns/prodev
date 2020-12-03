@@ -1,5 +1,8 @@
 import { Program } from "./program";
-export const PROGRAMS_SEED: Program[] = [
+
+
+
+export const PROGRAMS: Program[] = [
   { id: 11, name: "Dr Nice" },
   { id: 12, name: "Narco" },
   { id: 13, name: "Bombasto" },

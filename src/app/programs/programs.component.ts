@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Program } from "../program"; // import the "program type"
-import { PROGRAMS_SEED } from "../mock-programs";
+import { PROGRAMS } from "../mock-programs";
 
 @Component({
   selector: "app-programs",
@@ -8,9 +8,8 @@ import { PROGRAMS_SEED } from "../mock-programs";
   styleUrls: ["./programs.component.css"]
 })
 export class ProgramsComponent implements OnInit {
-  programs = PROGRAMS_SEED; //imports arrray of program instances
-  selectedProgram: Program; //
-
+  programs = PROGRAMS;
+  selectedProgram: Program;
   constructor() {}
 
   ngOnInit() {}
