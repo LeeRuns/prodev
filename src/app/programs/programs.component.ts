@@ -8,8 +8,15 @@ import { PROGRAMS_SEED } from "../mock-programs";
   styleUrls: ["./programs.component.css"]
 })
 export class ProgramsComponent implements OnInit {
-  programs = PROGRAMS_SEED;
+  programs = PROGRAMS_SEED; //imports arrray of program instances
+  selectedProgram: Program; //
+
   constructor() {}
 
   ngOnInit() {}
+
+  //click event handler
+  onSelect(program: Program): void {
+    this.selectedProgram = program;
+  }
 }
